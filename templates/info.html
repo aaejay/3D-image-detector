@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - 3D Model Error Detector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f3f4f6;
+            color: #1f2937;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            width: 100vw;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            margin-bottom: 2rem;
+            padding: 0.5rem 0;
+        }
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+        }
+        .nav-title {
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: #2563eb;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-link.active, .nav-link:hover {
+            color: #2563eb;
+        }
+        .info-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 16px rgba(37,99,235,0.07);
+            padding: 2.5rem 2rem;
+        }
+        h1 {
+            color: #111827;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        h2 {
+            color: #2563eb;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+        ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+        }
+        .footer {
+            width: 100vw;
+            background: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-top: 2rem;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.03);
+        }
+        @media (max-width: 640px) {
+            .nav-container { flex-direction: column; gap: 0.5rem; }
+            .info-container { padding: 1.2rem 0.5rem; }
+            .footer { font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-title">3D Model Error Detector</span>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/info" class="nav-link active">Info</a>
+            </div>
+        </div>
+    </nav>
+    <div class="info-container">
+        <h1>About This App</h1>
+        <p><strong>3D Model Error Detector</strong> is a web application that uses deep learning to detect errors in 3D model render images. Upload an image of your 3D model, and the app will analyze it to determine if there are any visible errors.</p>
+        <h2>How to Use</h2>
+        <ul>
+            <li>Go to the <a href="/">Home</a> page.</li>
+            <li>Drag and drop or select an image of your 3D model render.</li>
+            <li>Wait for the analysis. The app will display whether an error is detected and the confidence level.</li>
+        </ul>
+        <h2>About the Model</h2>
+        <p>The underlying model is a neural network trained to classify images of 3D model renders as either containing errors or not. The model is loaded and run server-side for privacy and performance.</p>
+        <h2>Contact & Credits</h2>
+        <p>For questions or feedback, please contact the developer.<br>© 2024 3D Model Error Detector.</p>
+    </div>
+    <footer class="footer">
+        <span>© 2024 3D Model Error Detector. All rights reserved.</span>
+    </footer>
+</body>
+</html> 
